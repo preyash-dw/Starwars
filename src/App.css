@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(0, 7, 61);
+}
+a {
+  text-decoration: none;
+}
+
+
+
+/* navbar.css */
+
+.navbar {
+  display: flex;
+  width:98%;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.leftStyle {
+  display: flex;
+  align-items: center;
+}
+
+.logoStyle {
+  width: 100px;
+  height: auto;
+}
+
+.rightStyle {
+  display: flex;
+  align-items: center;
+}
+
+.searchIconStyle {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.iconStyle {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.inputStyle {
+  border: none;
+  padding: 5px 10px;
+  background: transparent;
+  width: 150px;
+  outline: none;
+  color: white;
+}
+
+
+
+/* Left Bar css */
+.leftBar {
+  background: rgb(0, 7, 61);
+  color: white;
+  height: 100vh;
+  padding: 2rem;
+  width:18%;
+  position: fixed;
+}
+
+.link {
+  justify-content: space-around;
+  color: white;
+  width: 100%;
+  /* padding: 5px 10px; */
+  font-size: 25px;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+.mainElement{
+  display:flex ;
+  justify-content: space-around;
+  color: white;
+  width: 100%;
+  padding: 2px 0px;
+  font-size: medium;
+  border-radius: 5px;
+  margin-bottom: 2%;
+
+}
+.link:hover {
+  background: rgb(236, 63, 184);
+}
+.link:hover .links,
+.link:hover .file,
+.link:hover .right,
+.link:hover .mainElement,
+.link:hover button {
+  background: rgb(236, 63, 184);
+}
+.links {
+  text-decoration: none;
+  color: white;
+}
+.file {
+  text-decoration: none;
+  color: white;
+}
+.arrow{
+  border: none;
+  color: white;
+  justify-content: flex-end;
+}
+.leftBarActive {
+  background-color: rgb(236, 63, 184);
+}
+
+.main{
+  width:80%;
+  margin-left: 18%;
+}
+.droplist{
+  display:grid;
+  grid-template-columns:0.5fr 2fr 0.5fr;
+}
+.listdiv{
+  padding-left:15%;
+   font-size:15px;
+}
+
+.drop::-webkit-scrollbar {
+  width: 6px; 
+}
+
+.drop::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.drop::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
+}
+
+.drop::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 5px; 
+}
+
+
+
+
+/* RightBar Css */
+
+/* Header of rightbar */
+.grid{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.name{
+  margin-left: 30px;
+}
+
+.toggle{
+  padding: 3px;
+  border-radius: 4px;
+  margin-right: 30px;
+   background-color: white;
+}
+
+/* For Grid view */
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 2rem;
+  height: auto;
+}
+
+.rightBoxImage {
+  width: 100%;
+  height: 60%;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.rightBoxImage:hover{
+  transform: scale(1.02);
+}
+
+.mainImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.down {
+  display: flex;
+  background-color: rgba(72, 74, 109, 0.658);
+  padding: 6px;
+  border-radius: 7px;
+  color: black;
+  justify-content: space-between;
+  position: relative;
+}
+
+.left {
+  justify-content: flex-start;
+  display: flex;
+  background-color:  rgba(72, 74, 109, 0.030);
+  align-items: center;
+  color: white;
+}
+
+.dropdown {
+  position: absolute;
+  top: 105%; 
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  width: 40%; 
+  display: flex;
+  flex-wrap: wrap; 
+  z-index: 1; 
+}
+.dropdown a {
+  display: block; 
+  padding: 3px; 
+  text-decoration: none; 
+  color: #333; 
+  flex-direction:column;
+  box-sizing: border-box; 
+  background-color: white;
+}
+
+/* for list */
+.bar{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  border-bottom: 1px solid white;
+  padding: 10px 20px;
+  margin: 20px;
+  color: white;
+}
+.barTop{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 2fr;
+  padding:5px;
+  background-color:rgba(72, 74, 109, 0.658);
+  font-size:20px;
+  width:95%;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+  margin-left:2%;
+  margin-top:1%;
+  font-family:cursive;
+}
+
+/* Home CSS */
+
+.main {
+  display: flex;
+  align-items: center;
+  padding: 4%;
+  
+}
+
+.centeredBox {
+  width: 55%;
+  padding: 20px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+
+
+
+
+/* style for the sidebar container */
+.sidebar {
+  position: fixed;
+  max-height: 82%;
+  top: 15%;
+  right:0px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: left 0.9s linear; 
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+.sidebar p{
+  margin-top: "10%";
+}
+.sidebar button {
+  margin-top: 20px;
+}
+
+.dropElement{
+  width: 100%;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .box {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 3%;
+  }
+  .bar{
+    grid-template-columns: 2fr 1fr 1fr 0.5fr ;
+  }
+  .leftBar{
+    width: 20%;
+    padding:0rem;
+  }
+  .listdiv{
+    padding-left: 5%;
+    font-size: 15px;
+  }
+  .navbar{
+    width:98% !important;
+  }
+  .centeredBox{
+    width:80%;
+  }
+  .droplist{
+    grid-template-columns: 0.1fr 2fr 0.1fr;
+  }
+  .grid{
+    margin-left: 2%;
+  }
+  .inputStyle{
+    width: 100px;;
+  }
+  .barTop{
+    grid-template-columns: 2fr 1fr 1fr 0.5fr;
+    width: 90%;
+    margin-left: 7%;
+  }
+}
+@media (max-width: 850px) {
+  .box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bar{
+    grid-template-columns: 2fr 1fr 1fr 0.5fr ;
+  }
+  .leftBar{
+    width:20%;
+    padding: 0rem;
+  }
+  .listdiv{
+    padding-left: 5%;
+    font-size: 15px;
+  }
+  .centeredBox{
+    width:80%;
+  }
+  .navbar{
+    width:97% !important;
+  }
+  .droplist{
+    grid-template-columns: 0.1fr 2fr 0.1fr;
+  }
+  .barTop{
+    grid-template-columns: 1.8fr 1fr 1fr 0.5fr;
+    width: 90%;
+    margin-left: 7%;
+  }
+  .sidebar{
+    top: 9%;
+  }
+}
+@media (max-width: 480px) {
+  .box {
+    grid-template-columns: 1fr;
+   /* Change to a single column layout for mobile */
+  }
+  .bar{
+    grid-template-columns: 1.5fr 0.7fr 0.3fr 0.1fr ;
+    padding: 0px;
+  }
+  .barTop{
+    grid-template-columns: 1.8fr 0.8fr 0.5fr 0.01fr;
+    width: 90% !important;
+    margin-left: 7%;
+    font-size: 12px
+  }
+  .centeredBox{
+    width:100%;
+  }
+  .navbar{
+    width:94%;
+  }
+  .inputStyle{
+    width: 80px;
+  }
+  .grid{
+    margin-left: 1%;
+  }
+  .leftBar{
+    width: 24%;
+    padding:0rem;
+  }
+  .sidebar{
+    width: 250px;
+    top:14%;
+  }
+  .droplist{
+    grid-template-columns: 0.1fr 2fr 0.1fr;
+  }
+  .listdiv{
+    padding-left: 0%;
+    font-size: 12px;
+  }
+  .dropdown{
+    width: 60%;
+  }
+}
